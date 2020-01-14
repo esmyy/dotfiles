@@ -1,0 +1,29 @@
+######
+# Open Application in terminal
+#####
+
+# system app
+alias chrome="open /Applications/Google\ Chrome.app"
+alias ff="open /Applications/Firefox.app"
+alias app="open /Applications/App Store.app"
+alias safari="open /Applications/Safari.app"
+alias sys="open /Applications/System\ Preferences.app"
+alias siri="open /Applications/Siri.app"
+alias dict="open /Applications/Dictionary.app"
+
+
+# some other app example
+alias dd="open /Applications/DingTalk.app" # 钉钉
+alias qq="open /Applications/QQ.app" # QQ
+alias code="open /Applications/Visual\ Studio\ Code.app" # VS Code
+alias reeder="open /Applications/Reeder.app"
+alias wx="open /Applications/WeChat.app"
+alias wechat="open /Applications/WeChat.app" # 微信
+alias music="open /Applications/NeteaseMusic.app" # 网易云音乐
+alias typora="open /Applications/Typora.app"
+alias xmind="open /Applications/XMind\ ZEN.app"
+alias ppt="open /Applications/Microsoft\ PowerPoint.app"
+alias excel="open /Applications/Microsoft\ Excel.app" 
+alias al="open /Applications/Alfred\ 3.app"
+alias yd="open /Applications/网易有道词典.app"
+
