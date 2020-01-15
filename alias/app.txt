@@ -24,6 +24,5 @@ alias typora="open /Applications/Typora.app"
 alias xmind="open /Applications/XMind\ ZEN.app"
 alias ppt="open /Applications/Microsoft\ PowerPoint.app"
 alias excel="open /Applications/Microsoft\ Excel.app" 
-alias al="open /Applications/Alfred\ 3.app"
 alias yd="open /Applications/网易有道词典.app"
 
