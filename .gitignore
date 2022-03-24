@@ -1,2 +1,7 @@
-.git.nosync
-**/*.ignore*
+.idea
+.DS_Store
+dist/
+temp/
+
+node_modules/
+./**/node_modules

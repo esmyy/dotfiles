@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "allowUnreachableCode": false,
+    "module": "es2015",
+    "target": "es2015",
+    "rootDir": ".",
+    "outDir": "./dist",
+    "strict": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": false,
+    "useUnknownInCatchVariables": false,
+    "noImplicitOverride": true, // babel does not support this
+    "allowJs": false,
+    "checkJs": false,
+    "maxNodeModuleJsDepth": 0,
+    "disableSizeLimit": false,
+    "plugins": [{
+      "name": "typescript-styled-plugin"
+    }],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "lib": [],
+    "listEmittedFiles": true,
+    "noErrorTruncation": true,
+    "pretty": true
+  },
+  "include": ["src"],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,3 +1,4 @@
+1
 #!/bin/sh
 
 git filter-branch --env-filter '
