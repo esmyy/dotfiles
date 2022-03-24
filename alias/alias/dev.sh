@@ -1,7 +1,7 @@
 # development
 
-default_domain="http://localhost" # set as your site's domain
-alias 80="chrome $default_domain"
+DEV_HOST="http://localhost" # set as your site's domain
+alias 80="chrome $DEV_HOST"
 alias cra="npx create-react-app"
 # shellcheck disable=SC2139
 alias ip="ifconfig -a|grep inet|grep -v 127.0.0.1|grep -v inet6|awk '{print $2}'"

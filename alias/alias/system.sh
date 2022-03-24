@@ -21,3 +21,5 @@ alias capture-png="defaults write com.apple.screencapture type jpg"
 
 # dock
 alias dock-s="defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'; killall Dock"
+
+PATH=$(echo $PATH | sed 's/:/\n/g' | sort | uniq | tr -s '\n' ':' | sed 's/:$//g')

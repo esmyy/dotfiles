@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 current_dir=$(cd "$(dirname "$0")" || exit;pwd)
-target_profile=$HOME/.bashrc
 source_alias_dir=$current_dir/alias
+target_profile=$HOME/.bashrc
 
 if [ ! -e "$target_profile" ]; then
   touch "$target_profile"
@@ -15,7 +15,7 @@ fi
   printf "# ------------------------\n"
 } >> "$target_profile"
 
-source "$current_dir/cmd/add_line_to_target_if_not_exists.sh"
+source "$current_dir/cmd/add_line_to_target_file.sh"
 for file in "$source_alias_dir"/*
 do
     while IFS= read -r line;
@@ -35,4 +35,4 @@ done
 } >> "$target_profile"
 
 # shellcheck source=$HOME/.bashrc
-source "$target_profile"
+source "$HOME"/.bashrc

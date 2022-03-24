@@ -2,19 +2,23 @@
 
 current_dir=$(cd "$(dirname "$0")" || exit;pwd)
 source_cmd_dir=$current_dir/cmd
-target_profile=$HOME/.bashrc
-target_cmd_dir=$current_dir/.self_cmd
+target_cmd_dir=/usr/local/bin # maybe not in PATH
 
-if [ ! -e "$target_cmd_dir" ]; then
+if [ ! -d "$target_cmd_dir" ]; then
+  echo "do it"
   mkdir "$target_cmd_dir"
 fi
 
-cp "$source_cmd_dir"/* target_cmd_dir
+# copy to $PATH bin dir
+for file in "$source_cmd_dir"/*
+do
+    chmod 755 "$file"
+    name=$(basename "$file" | cut -d . -f1)
+    cp "$file" "$target_cmd_dir/$name"
+done
 
-source_cmd="source $target_cmd_dir/*.sh"
-grep -q "$source_cmd" "$target_profile" &&
-if [`grep -c "$source_cmd" $target_profile` -ne '0' ];then
-  echo "\033[32m $line \033[0m"
-else
-  echo "\033[31m $line \033[0m"
-fi
+source "$current_dir/cmd/add_line_to_target_file.sh"
+
+# shellcheck source=$HOME/.bashrc
+source "$HOME"/.bashrc
+
