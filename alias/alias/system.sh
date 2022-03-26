@@ -9,7 +9,7 @@ alias sleep="shutdown -s now"
 # sudo shutdown -s 20:00
 
 # Most useful command
-alias aliasForBestFrends="sudo rm -rf /"
+alias aliasForBestFriends="sudo rm -rf /"
 
 # crash handle
 alias crash-hide="defaults write com.apple.CrashReporter DialogType none"
@@ -21,5 +21,3 @@ alias capture-png="defaults write com.apple.screencapture type jpg"
 
 # dock
 alias dock-s="defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'; killall Dock"
-
-PATH=$(echo $PATH | sed 's/:/\n/g' | sort | uniq | tr -s '\n' ':' | sed 's/:$//g')

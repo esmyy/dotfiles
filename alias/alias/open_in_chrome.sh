@@ -1,4 +1,4 @@
-# Chrome quick open
+# maybe alfred is better.
 
 # gg as prefix
 alias gmail="chrome https://mail.google.com/mail/u/0/"

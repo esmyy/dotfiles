@@ -2,7 +2,7 @@
 
 current_dir=$(cd "$(dirname "$0")" || exit;pwd)
 source_alias_dir=$current_dir/alias
-target_profile=$HOME/.bashrc
+target_profile=$HOME/.zshrc # optimize maybe others $SHELL
 
 if [ ! -e "$target_profile" ]; then
   touch "$target_profile"
@@ -34,5 +34,5 @@ done
   printf "# ------------------------\n"
 } >> "$target_profile"
 
-# shellcheck source=$HOME/.bashrc
-source "$HOME"/.bashrc
+# shellcheck source=$HOME/.bash_profile
+source "$target_profile"
