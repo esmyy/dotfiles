@@ -7,6 +7,7 @@ alias lbin="cd /usr/local/bin"
 alias work="cd $HOME/working"
 alias dg="cd $HOME/working"
 alias self="cd $HOME/self"
+alias tech="cd $HOME/self"
 alias ss="cd $HOME/.ssh"
 
 # custom self repos
@@ -14,3 +15,5 @@ alias repos="cd $HOME/repos"
 alias repo="cd $HOME/repo"
 alias dot="cd $HOME/self/dotfiles"
 alias dc="cd $HOME/self/daily-coding"
+alias coding="cd $HOME/self/coding/"
+alias react="cd $HOME/self/coding/react/";
