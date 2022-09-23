@@ -2,7 +2,7 @@
 
 current_dir=$(cd "$(dirname "$0")" || exit;pwd)
 source_cmd_dir=$current_dir/cmd
-target_cmd_dir=/usr/local/bin # maybe not in PATH
+target_cmd_dir=/usr/local/bin
 
 if [ ! -d "$target_cmd_dir" ]; then
   echo "do it"
